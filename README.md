@@ -1,3 +1,17 @@
+# Classes, Components, and Controllers I used
+
+PopulatePokemon.apxc = Populates Pokemon into Database. It is recommended to populate in intervals of 50. Ex: PopulatePokemon.consumeAPI(1,50);
+PokemonImage.cmp = Display Footer Images
+ViewPokemon.cmp = Component used to display Pokemon Objects within the database
+ViewEntireTeamRoster.cmp = Component used to display Team filled with Pokemon Roster Objects.
+--------------------------------------------------------------------------------------------------------------------------------
+FetchPokemon.apxc = Apex controller for ViewPokemon.cmp (displays Pokedex, full of all pokemon currently in the database)
+ViewEntireTeamRosterApex.apxc = Apex Controller for ViewEntireTeamRoster.cmp (displays team roster, and allows deletion of them)
+--------------------------------------------------------------------------------------------------------------------------------
+DeletePokemon.apxc = Used to delete All Pokemon and Pokemon Rosters in database, if neccessary
+--------------------------------------------------------------------------------------------------------------------------------
+
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.

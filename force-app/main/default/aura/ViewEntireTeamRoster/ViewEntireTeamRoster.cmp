@@ -1,0 +1,25 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global"
+                controller="ViewEntireTeamRosterApex">
+    
+    <aura:attribute name="TeamList" type="List"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="PageHeading" type="String" default="Delete Records"/>
+     <aura:attribute name="delIds" type="List"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.populateTeam}"/>
+     <aura:handler event="force:refreshView" action="{!c.populateTeam}" />
+    
+    
+    <lightning:card class="slds-text-align_center"  title="Your Team"> 
+    <lightning:datatable data="{!v.TeamList}"
+                         columns="{!v.columns}"
+                         keyField="id"
+                         hideCheckboxColumn="false"
+                         onrowselection="{!c.handleRowAction}"
+                         />
+        <div class="slds-align_absolute-center" style="height:5rem;width:12rem;padding:1.5rem"> 
+        <lightning:button variant="brand" label="Release Pokemon" onclick="{!c.doDelete}"/>
+    </div>
+                       
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,14 @@
+<aura:component implements="flexipage:availableForRecordHome,forceCommunity:availableForAllPageTypes,force:hasRecordID">
+
+    
+    <aura:attribute name ="PokemonRecord" type="string"  
+                    default="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"/>
+     <aura:attribute name ="PokemonRecord2" type="string"  
+                    default="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"/>
+     <aura:attribute name ="PokemonRecord3" type="string"  
+                    default="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"/>
+    <div style="text-align:center">
+    <img src="{!v.PokemonRecord}" width = "400" margin="500"/>
+    <img src="{!v.PokemonRecord2}" width = "400"/>
+    <img src="{!v.PokemonRecord3}" width = "400"/></div>
+</aura:component>

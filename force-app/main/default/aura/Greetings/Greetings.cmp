@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes">
+<aura:attribute name="greeting" type="String" default="Hello?  " />
+<aura:attribute name="subject" type="String" default="Pog!" />
+
+<div style="box">
+  <span class="greeting">{!v.greeting}   </span> {!v.subject}
+</div>
+</aura:component>

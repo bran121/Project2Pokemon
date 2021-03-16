@@ -1,0 +1,14 @@
+.THIS .slds-text-heading_small{
+    width:100%;
+    font-size: 2.5rem !important;
+}
+
+
+
+.THIS .customCSS { 
+   
+   background-image: url("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png");
+    background-repeat: no-repeat;
+    background-size: 75px;
+    background-position: center;
+}
